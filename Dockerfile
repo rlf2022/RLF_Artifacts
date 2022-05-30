@@ -39,8 +39,8 @@ WORKDIR /z3/build
 RUN make -j7
 RUN make install
 
-# copy ilf
-ADD ./ /go/src/ilf/
+# copy rlf
+ADD ./ /go/src/rlf/
 
 # install go-ethereum
 RUN mkdir -p /go/src/github.com/ethereum/
@@ -48,13 +48,9 @@ WORKDIR /go/src/github.com/ethereum/
 RUN git clone https://github.com/ethereum/go-ethereum.git
 WORKDIR /go/src/github.com/ethereum/go-ethereum
 RUN git checkout 86be91b3e2dff5df28ee53c59df1ecfe9f97e007
-RUN git apply /go/src/ilf/script/patch.geth
-# RUN go get github.com/ethereum/go-ethereum
-# WORKDIR /go/src/github.com/ethereum/go-ethereum
-# RUN git checkout 86be91b3e2dff5df28ee53c59df1ecfe9f97e007
-# RUN git apply /go/src/ilf/script/patch.geth
+RUN git apply /go/src/rlf/script/patch.geth
 
-WORKDIR /go/src/ilf
+WORKDIR /go/src/rlf
 # install python dependencies
 RUN pip3 install -r requirements.txt --no-cache-dir
 RUN go build -o execution.so -buildmode=c-shared export/execution.go

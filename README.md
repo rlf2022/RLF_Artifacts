@@ -64,8 +64,18 @@ $ sudo mv solc-static-linux /usr/bin/solc
 
 ## Usage
 
-### Fuzzing
+### Fuzzing example
 
 ```
 python3 -m rlf --proj example/crowdsale/ --contract Crowdsale --fuzzer reinforcement --limit 2000 --reward cov+bugs --mode test
+```
+
+### Batch run for D1
+```
+python script/run.py --dataset D1
+```
+
+### Batch run for D2
+```
+python script/run.py --dataset D2
 ```

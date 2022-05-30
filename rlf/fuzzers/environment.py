@@ -47,8 +47,6 @@ class Environment:
         LOG.info('initial calls end')
 
         init_limit = 0
-        # LOG.info(f'frandom policy, limit={init_limit}')
-        # self.init_txs_RL(policy, obs, init_limit, result)
         LOG.info('start reinforcement policy')
         result['txs_loop'] = []
         result['bug_finder'] = dict()
@@ -108,31 +106,16 @@ class Environment:
                 action_cov = action_cov.mean()
                 new_insn_coverage, new_block_coverage = obs.stat.get_coverage(tx.contract)
                 reward_of_bug = 0
-                # for bug in obs.stat.update_bug:
-                # for bug in ['BlockStateDep']:
-                # if 'BlockStateDep' in obs.stat.update_bug:
-                #     reward_of_bug += len(obs.stat.update_bug['BlockStateDep'])
-                # print(obs.stat.update_bug)
-                # input('stop')
                 for bug in obs.stat.update_bug:
                     if bug in ['Suicidal', 'Leaking']:
                         # reward_of_bug += len(obs.stat.update_bug[bug])
                         reward_of_bug = 1
-                # print(obs.stat.update_bug, reward_of_bug)
                 reward = bug_rate * reward_of_bug + (1-bug_rate) * action_cov
-                # reward = (new_insn_coverage + new_block_coverage)/2 + reward_of_bug
-                # reward = (new_insn_coverage + new_block_coverage)
-                # reward = reward_of_bug 
-                # print(reward)
                 # print('reward: ',reward)
                 obs.stat.update_bug = dict()
 
             policy.agent.store_transition(state, action, reward,i)
-            # if reward > 0:
-            #     policy.agent.buffer.create_new_epi()
-            # print(np.sqrt(np.sum((np.square(next_state - state )))))
             state = next_state
-            # hidden = next_hidden
             episode_reward += reward
             # LOG.info(obs.stat)
 
@@ -146,9 +129,9 @@ class Environment:
 
             if i % self.max_episode == 0 and i <= 2000:
                 result['txs_loop'].append((time.time(),obs.stat.to_json()))
-                print(policy.action_trace)
-                print(policy.action_count_array)
-                print(policy.agent_action_count_array)
+                # print(policy.action_trace)
+                # print(policy.action_count_array)
+                # print(policy.agent_action_count_array)
             if i % self.max_episode == 0 and i < self.limit:
                 policy.reset()
                 policy.reset_dqn_state()
@@ -172,10 +155,10 @@ class Environment:
         if args.mode == 'train':
             policy.agent.save(args.rl_model)
         # print(f'total rewoard:{total_reward}')
-        print(policy.action_trace)
-        print(policy.action_count_array)
+        # print(policy.action_trace)
+        # print(policy.action_count_array)
         LOG.info(obs.stat)
-        print(policy.epi_iter)
+        # print(policy.epi_iter)
         return result, count_dict
 
     def init_txs_RL(self, policy, obs, limit, result):

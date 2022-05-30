@@ -1,0 +1,2570 @@
+{
+  "contractName": "JinYongGravestone",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "epitaph",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "worship_count",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "worships",
+      "outputs": [
+        {
+          "name": "fullname",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_fullname",
+          "type": "string"
+        },
+        {
+          "name": "_message",
+          "type": "string"
+        }
+      ],
+      "name": "do_worship",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "departed",
+      "outputs": [
+        {
+          "name": "fullname",
+          "type": "string"
+        },
+        {
+          "name": "birth_date",
+          "type": "string"
+        },
+        {
+          "name": "death_date",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.25+commit.59dbf8f1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"epitaph\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"worship_count\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"worships\",\"outputs\":[{\"name\":\"fullname\",\"type\":\"string\"},{\"name\":\"message\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_fullname\",\"type\":\"string\"},{\"name\":\"_message\",\"type\":\"string\"}],\"name\":\"do_worship\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"departed\",\"outputs\":[{\"name\":\"fullname\",\"type\":\"string\"},{\"name\":\"birth_date\",\"type\":\"string\"},{\"name\":\"death_date\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/fuzz_contract.sol\":\"JinYongGravestone\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/fuzz_contract.sol\":{\"keccak256\":\"0x827b180352fb0a4d3b49584f5dd815fe60f9add164570f2f570187ff97e01578\",\"urls\":[\"bzzr://49b6e3770d10af6e956cc589219f476f256228823cbd899808768a9e28fd7a71\"]}},\"version\":1}",
+  "bytecode": "0x60806040523480156200001157600080fd5b506040805190810160405280600881526020017fefbfbdefbfbdd3b90000000000000000000000000000000000000000000000008152506040805190810160405280601981526020017f31393234efbfbdefbfbd33efbfbdefbfbd3130efbfbdefbfbd000000000000008152506040805190810160405280601a81526020017f32303138efbfbdefbfbd3130efbfbdefbfbd3330efbfbdefbfbd00000000000081525060e06040519081016040528060b8815260200162000dc960b89139606060405190810160405280858152602001848152602001838152506000808201518160000190805190602001906200010a9291906200016f565b506020820151816001019080519060200190620001299291906200016f565b506040820151816002019080519060200190620001489291906200016f565b50905050806003908051906020019062000164929190620001f6565b5050505050620002a5565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10620001b257805160ff1916838001178555620001e3565b82800160010185558215620001e3579182015b82811115620001e2578251825591602001919060010190620001c5565b5b509050620001f291906200027d565b5090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106200023957805160ff19168380011785556200026a565b828001600101855582156200026a579182015b82811115620002695782518255916020019190600101906200024c565b5b5090506200027991906200027d565b5090565b620002a291905b808211156200029e57600081600090555060010162000284565b5090565b90565b610b1480620002b56000396000f30060806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063830256ce14610072578063a657f41014610102578063aace61c21461012d578063f69ac0a61461023f578063f759fe4f14610367575b600080fd5b34801561007e57600080fd5b506100876104cf565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b5061011761056d565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061015860048036038101908080359060200190929190505050610573565b604051808060200180602001838103835285818151815260200191508051906020019080838360005b8381101561019c578082015181840152602081019050610181565b50505050905090810190601f1680156101c95780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156102025780820151818401526020810190506101e7565b50505050905090810190601f16801561022f5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561024b57600080fd5b506102ec600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506106d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561032c578082015181840152602081019050610311565b50505050905090810190601f1680156103595780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561037357600080fd5b5061037c6107aa565b60405180806020018060200180602001848103845287818151815260200191508051906020019080838360005b838110156103c45780820151818401526020810190506103a9565b50505050905090810190601f1680156103f15780820380516001836020036101000a031916815260200191505b50848103835286818151815260200191508051906020019080838360005b8381101561042a57808201518184015260208101905061040f565b50505050905090810190601f1680156104575780820380516001836020036101000a031916815260200191505b50848103825285818151815260200191508051906020019080838360005b83811015610490578082015181840152602081019050610475565b50505050905090810190601f1680156104bd5780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b60038054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105655780601f1061053a57610100808354040283529160200191610565565b820191906000526020600020905b81548152906001019060200180831161054857829003601f168201915b505050505081565b60055481565b60048181548110151561058257fe5b9060005260206000209060020201600091509050806000018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561062e5780601f106106035761010080835404028352916020019161062e565b820191906000526020600020905b81548152906001019060200180831161061157829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106cc5780601f106106a1576101008083540402835291602001916106cc565b820191906000526020600020905b8154815290600101906020018083116106af57829003601f168201915b5050505050905082565b60606000600480548091906001016106ee919061098a565b905060048054905060058190555060408051908101604052808581526020018481525060048281548110151561072057fe5b9060005260206000209060020201600082015181600001908051906020019061074a9291906109bc565b5060208201518160010190805190602001906107679291906109bc565b509050506040805190810160405280600981526020017f5468616e6b20796f75000000000000000000000000000000000000000000000081525091505092915050565b6000806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108445780601f1061081957610100808354040283529160200191610844565b820191906000526020600020905b81548152906001019060200180831161082757829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108e25780601f106108b7576101008083540402835291602001916108e2565b820191906000526020600020905b8154815290600101906020018083116108c557829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156109805780601f1061095557610100808354040283529160200191610980565b820191906000526020600020905b81548152906001019060200180831161096357829003601f168201915b5050505050905083565b8154818355818111156109b7576002028160020283600052602060002091820191016109b69190610a3c565b5b505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106109fd57805160ff1916838001178555610a2b565b82800160010185558215610a2b579182015b82811115610a2a578251825591602001919060010190610a0f565b5b509050610a389190610a7b565b5090565b610a7891905b80821115610a745760008082016000610a5b9190610aa0565b600182016000610a6b9190610aa0565b50600201610a42565b5090565b90565b610a9d91905b80821115610a99576000816000905550600101610a81565b5090565b90565b50805460018160011615610100020316600290046000825580601f10610ac65750610ae5565b601f016020900490600052602060002090810190610ae49190610a7b565b5b505600a165627a7a72305820106da50a7f97b4c211d7bfe05459a6ebc14504637e228f43c72c344172a2ff010029efbfbdefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdd2bbefbfbdefbfbdefbfbdcba3efbfbdefbfbddab6efbfbdcaaeefbfbdefbfbdefbfbdcda1efbfbdefbfbdefbfbdcaaed2bbefbfbdefbfbdefbfbdcda3efbfbdefbfbdefbfbdd0b4efbfbdefbfbdefbfbdefbfbdcaaeefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdd0a1cbb5efbfbdefbfbdefbfbdefbfbdd0a9d0a1cbb5ceaaefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdcfb2efbfbdefbfbdefbfbdefbfbd",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063830256ce14610072578063a657f41014610102578063aace61c21461012d578063f69ac0a61461023f578063f759fe4f14610367575b600080fd5b34801561007e57600080fd5b506100876104cf565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b5061011761056d565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061015860048036038101908080359060200190929190505050610573565b604051808060200180602001838103835285818151815260200191508051906020019080838360005b8381101561019c578082015181840152602081019050610181565b50505050905090810190601f1680156101c95780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156102025780820151818401526020810190506101e7565b50505050905090810190601f16801561022f5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561024b57600080fd5b506102ec600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506106d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561032c578082015181840152602081019050610311565b50505050905090810190601f1680156103595780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561037357600080fd5b5061037c6107aa565b60405180806020018060200180602001848103845287818151815260200191508051906020019080838360005b838110156103c45780820151818401526020810190506103a9565b50505050905090810190601f1680156103f15780820380516001836020036101000a031916815260200191505b50848103835286818151815260200191508051906020019080838360005b8381101561042a57808201518184015260208101905061040f565b50505050905090810190601f1680156104575780820380516001836020036101000a031916815260200191505b50848103825285818151815260200191508051906020019080838360005b83811015610490578082015181840152602081019050610475565b50505050905090810190601f1680156104bd5780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b60038054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105655780601f1061053a57610100808354040283529160200191610565565b820191906000526020600020905b81548152906001019060200180831161054857829003601f168201915b505050505081565b60055481565b60048181548110151561058257fe5b9060005260206000209060020201600091509050806000018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561062e5780601f106106035761010080835404028352916020019161062e565b820191906000526020600020905b81548152906001019060200180831161061157829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106cc5780601f106106a1576101008083540402835291602001916106cc565b820191906000526020600020905b8154815290600101906020018083116106af57829003601f168201915b5050505050905082565b60606000600480548091906001016106ee919061098a565b905060048054905060058190555060408051908101604052808581526020018481525060048281548110151561072057fe5b9060005260206000209060020201600082015181600001908051906020019061074a9291906109bc565b5060208201518160010190805190602001906107679291906109bc565b509050506040805190810160405280600981526020017f5468616e6b20796f75000000000000000000000000000000000000000000000081525091505092915050565b6000806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108445780601f1061081957610100808354040283529160200191610844565b820191906000526020600020905b81548152906001019060200180831161082757829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108e25780601f106108b7576101008083540402835291602001916108e2565b820191906000526020600020905b8154815290600101906020018083116108c557829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156109805780601f1061095557610100808354040283529160200191610980565b820191906000526020600020905b81548152906001019060200180831161096357829003601f168201915b5050505050905083565b8154818355818111156109b7576002028160020283600052602060002091820191016109b69190610a3c565b5b505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106109fd57805160ff1916838001178555610a2b565b82800160010185558215610a2b579182015b82811115610a2a578251825591602001919060010190610a0f565b5b509050610a389190610a7b565b5090565b610a7891905b80821115610a745760008082016000610a5b9190610aa0565b600182016000610a6b9190610aa0565b50600201610a42565b5090565b90565b610a9d91905b80821115610a99576000816000905550600101610a81565b5090565b90565b50805460018160011615610100020316600290046000825580601f10610ac65750610ae5565b601f016020900490600052602060002090810190610ae49190610a7b565b5b505600a165627a7a72305820106da50a7f97b4c211d7bfe05459a6ebc14504637e228f43c72c344172a2ff010029",
+  "sourceMap": "1312:342:1:-;;;1359:290;8:9:-1;5:2;;;30:1;27;20:12;5:2;1359:290:1;411:222;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;520:81;;;;;;;;;540:9;520:81;;;;563:11;520:81;;;;588:11;520:81;;;509:8;:92;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;618:8;608:7;:18;;;;;;;;;;;;:::i;:::-;;411:222;;;;1312:342;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "1312:342:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;221:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;221:21:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;221:21:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;325:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;325:25:1;;;;;;;;;;;;;;;;;;;;;;;294;;8:9:-1;5:2;;;30:1;27;20:12;5:2;294:25:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;294:25:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;294:25:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;679:262;;8:9:-1;5:2;;;30:1;27;20:12;5:2;679:262:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;679:262:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;137:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;137:24:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;137:24:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;137:24:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;137:24:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;221:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;325:25::-;;;;:::o;294:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;679:262::-;749:6;764:7;774:8;:17;;;;;;;;;;;:::i;:::-;764:27;;814:8;:15;;;;798:13;:31;;;;851:49;;;;;;;;;870:9;851:49;;;;890:8;851:49;;;836:8;845:2;836:12;;;;;;;;;;;;;;;;;;;;:64;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;913:18;;;;;;;;;;;;;;;;;;;;679:262;;;;;:::o;137:24::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;1312:342::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o",
+  "source": "/**\r\n\r\n *Submitted for verification at Etherscan.io on 2018-10-30\r\n\r\n*/\r\n\r\n\r\n\r\npragma solidity ^0.4.25;\r\n\r\n\r\n\r\ncontract Gravestone {\r\n\r\n\tDeparted public departed;\r\n\r\n\t\r\n\r\n\t/* the message engraved on the gravestone */\r\n\r\n\tstring public epitaph;\r\n\r\n\t\r\n\r\n    /* worships to the departed */\r\n\r\n    Worship[] public worships;\r\n\r\n\tuint public worship_count;\r\n\r\n\t\r\n\r\n\t/* This runs when the contract is executed */\r\n\r\n\tconstructor(string _fullname,string _birth_date,string _death_date,string _epitaph) public {\r\n\r\n\t\tdeparted = Departed({fullname: _fullname, birth_date: _birth_date, death_date: _death_date});\r\n\r\n\t\tepitaph = _epitaph;\r\n\r\n\t}\r\n\r\n\r\n\r\n    /* worship the departed */\r\n\r\n    function do_worship(string _fullname,string _message) public returns (string) {\r\n\r\n\t\tuint id = worships.length++;\r\n\r\n\t\tworship_count = worships.length;\r\n\r\n\t\tworships[id] = Worship({fullname: _fullname, message: _message});\r\n\r\n        return \"Thank you\";\r\n\r\n    }\r\n\r\n\t\r\n\r\n\tstruct Departed {\r\n\r\n\t\t/* name of the person */\r\n\r\n\t\tstring fullname;\r\n\r\n\t\t/* birth date of the person */\r\n\r\n\t\tstring birth_date;\r\n\r\n\t\t/* death date of the person */\r\n\r\n\t\tstring death_date;\r\n\r\n\t}\r\n\r\n\t\r\n\r\n\tstruct Worship {\r\n\r\n\t\t/* full name of the worship person */\r\n\r\n\t\tstring fullname;\r\n\r\n\t\t/* message to the departed */\r\n\r\n\t\tstring message;\r\n\r\n\t}\r\n\r\n}\r\n\r\n\r\n\r\ncontract JinYongGravestone is Gravestone {\r\n\r\n\tconstructor() Gravestone(\"��ӹ\",\"1924��3��10��\",\"2018��10��30��\",\"��������һ���ˣ��ڶ�ʮ���͡���ʮһ���ͣ���д����ʮ������С˵����ЩС˵Ϊ������ϲ����\") public {}\r\n\r\n}",
+  "sourcePath": "/root/go/src/rlf/example/test2/contracts/fuzz_contract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/fuzz_contract.sol",
+    "exportedSymbols": {
+      "Gravestone": [
+        136
+      ],
+      "JinYongGravestone": [
+        149
+      ]
+    },
+    "id": 150,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "79:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 136,
+        "linearizedBaseContracts": [
+          136
+        ],
+        "name": "Gravestone",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "departed",
+            "nodeType": "VariableDeclaration",
+            "scope": 136,
+            "src": "137:24:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Departed_$130_storage",
+              "typeString": "struct Gravestone.Departed"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 59,
+              "name": "Departed",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 130,
+              "src": "137:8:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Departed_$130_storage_ptr",
+                "typeString": "struct Gravestone.Departed"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 62,
+            "name": "epitaph",
+            "nodeType": "VariableDeclaration",
+            "scope": 136,
+            "src": "221:21:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 61,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "221:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 65,
+            "name": "worships",
+            "nodeType": "VariableDeclaration",
+            "scope": 136,
+            "src": "294:25:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Worship_$135_storage_$dyn_storage",
+              "typeString": "struct Gravestone.Worship[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 63,
+                "name": "Worship",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 135,
+                "src": "294:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Worship_$135_storage_ptr",
+                  "typeString": "struct Gravestone.Worship"
+                }
+              },
+              "id": 64,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "294:9:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Worship_$135_storage_$dyn_storage_ptr",
+                "typeString": "struct Gravestone.Worship[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 67,
+            "name": "worship_count",
+            "nodeType": "VariableDeclaration",
+            "scope": 136,
+            "src": "325:25:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 66,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "325:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 90,
+              "nodeType": "Block",
+              "src": "502:131:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 84,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 78,
+                      "name": "departed",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "509:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Departed_$130_storage",
+                        "typeString": "struct Gravestone.Departed storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 80,
+                          "name": "_fullname",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 69,
+                          "src": "540:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 81,
+                          "name": "_birth_date",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "563:11:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 82,
+                          "name": "_death_date",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 73,
+                          "src": "588:11:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 79,
+                        "name": "Departed",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 130,
+                        "src": "520:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Departed_$130_storage_ptr_$",
+                          "typeString": "type(struct Gravestone.Departed storage pointer)"
+                        }
+                      },
+                      "id": 83,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [
+                        "fullname",
+                        "birth_date",
+                        "death_date"
+                      ],
+                      "nodeType": "FunctionCall",
+                      "src": "520:81:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Departed_$130_memory",
+                        "typeString": "struct Gravestone.Departed memory"
+                      }
+                    },
+                    "src": "509:92:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Departed_$130_storage",
+                      "typeString": "struct Gravestone.Departed storage ref"
+                    }
+                  },
+                  "id": 85,
+                  "nodeType": "ExpressionStatement",
+                  "src": "509:92:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 88,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 86,
+                      "name": "epitaph",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "608:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 87,
+                      "name": "_epitaph",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 75,
+                      "src": "618:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "608:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 89,
+                  "nodeType": "ExpressionStatement",
+                  "src": "608:18:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 91,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 76,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "_fullname",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 91,
+                  "src": "423:16:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 68,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "423:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 71,
+                  "name": "_birth_date",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 91,
+                  "src": "440:18:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 70,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "440:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 73,
+                  "name": "_death_date",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 91,
+                  "src": "459:18:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 72,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "459:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 75,
+                  "name": "_epitaph",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 91,
+                  "src": "478:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 74,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "478:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "422:72:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 77,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "502:0:1"
+            },
+            "scope": 136,
+            "src": "411:222:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 122,
+              "nodeType": "Block",
+              "src": "757:184:1",
+              "statements": [
+                {
+                  "assignments": [
+                    101
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 101,
+                      "name": "id",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 123,
+                      "src": "764:7:1",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 100,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "764:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 105,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "id": 104,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "774:17:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 102,
+                        "name": "worships",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 65,
+                        "src": "774:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Worship_$135_storage_$dyn_storage",
+                          "typeString": "struct Gravestone.Worship storage ref[] storage ref"
+                        }
+                      },
+                      "id": 103,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "774:15:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "764:27:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 109,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 106,
+                      "name": "worship_count",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 67,
+                      "src": "798:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 107,
+                        "name": "worships",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 65,
+                        "src": "814:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Worship_$135_storage_$dyn_storage",
+                          "typeString": "struct Gravestone.Worship storage ref[] storage ref"
+                        }
+                      },
+                      "id": 108,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "814:15:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "798:31:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 110,
+                  "nodeType": "ExpressionStatement",
+                  "src": "798:31:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 118,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 111,
+                        "name": "worships",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 65,
+                        "src": "836:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Worship_$135_storage_$dyn_storage",
+                          "typeString": "struct Gravestone.Worship storage ref[] storage ref"
+                        }
+                      },
+                      "id": 113,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 112,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 101,
+                        "src": "845:2:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "836:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Worship_$135_storage",
+                        "typeString": "struct Gravestone.Worship storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 115,
+                          "name": "_fullname",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 93,
+                          "src": "870:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 116,
+                          "name": "_message",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 95,
+                          "src": "890:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 114,
+                        "name": "Worship",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 135,
+                        "src": "851:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Worship_$135_storage_ptr_$",
+                          "typeString": "type(struct Gravestone.Worship storage pointer)"
+                        }
+                      },
+                      "id": 117,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [
+                        "fullname",
+                        "message"
+                      ],
+                      "nodeType": "FunctionCall",
+                      "src": "851:49:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Worship_$135_memory",
+                        "typeString": "struct Gravestone.Worship memory"
+                      }
+                    },
+                    "src": "836:64:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Worship_$135_storage",
+                      "typeString": "struct Gravestone.Worship storage ref"
+                    }
+                  },
+                  "id": 119,
+                  "nodeType": "ExpressionStatement",
+                  "src": "836:64:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "5468616e6b20796f75",
+                    "id": 120,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "920:11:1",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_f64326a867c1b51a9b9c8894894168060349d56c756b0523e634ea7005e465a9",
+                      "typeString": "literal_string \"Thank you\""
+                    },
+                    "value": "Thank you"
+                  },
+                  "functionReturnParameters": 99,
+                  "id": 121,
+                  "nodeType": "Return",
+                  "src": "913:18:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 123,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "do_worship",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 96,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 93,
+                  "name": "_fullname",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 123,
+                  "src": "699:16:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 92,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "699:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 95,
+                  "name": "_message",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 123,
+                  "src": "716:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 94,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "716:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "698:34:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 99,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 98,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 123,
+                  "src": "749:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "749:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "748:8:1"
+            },
+            "scope": 136,
+            "src": "679:262:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Gravestone.Departed",
+            "id": 130,
+            "members": [
+              {
+                "constant": false,
+                "id": 125,
+                "name": "fullname",
+                "nodeType": "VariableDeclaration",
+                "scope": 130,
+                "src": "1004:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 124,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1004:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 127,
+                "name": "birth_date",
+                "nodeType": "VariableDeclaration",
+                "scope": 130,
+                "src": "1062:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 126,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1062:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 129,
+                "name": "death_date",
+                "nodeType": "VariableDeclaration",
+                "scope": 130,
+                "src": "1122:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 128,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1122:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Departed",
+            "nodeType": "StructDefinition",
+            "scope": 136,
+            "src": "951:195:1",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Gravestone.Worship",
+            "id": 135,
+            "members": [
+              {
+                "constant": false,
+                "id": 132,
+                "name": "fullname",
+                "nodeType": "VariableDeclaration",
+                "scope": 135,
+                "src": "1221:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 131,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1221:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 134,
+                "name": "message",
+                "nodeType": "VariableDeclaration",
+                "scope": 135,
+                "src": "1278:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 133,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1278:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Worship",
+            "nodeType": "StructDefinition",
+            "scope": 136,
+            "src": "1156:143:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 150,
+        "src": "111:1193:1"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 137,
+              "name": "Gravestone",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 136,
+              "src": "1342:10:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Gravestone_$136",
+                "typeString": "contract Gravestone"
+              }
+            },
+            "id": 138,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1342:10:1"
+          }
+        ],
+        "contractDependencies": [
+          136
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 149,
+        "linearizedBaseContracts": [
+          149,
+          136
+        ],
+        "name": "JinYongGravestone",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 147,
+              "nodeType": "Block",
+              "src": "1647:2:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 148,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "hexValue": "efbfbdefbfbdd3b9",
+                    "id": 141,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1384:10:1",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_9650428bbf432098c01c3a67247f025614677ce2e319d5e5f95a60b85977c1e5",
+                      "typeString": "literal_string \"��ӹ\""
+                    },
+                    "value": "��ӹ"
+                  },
+                  {
+                    "argumentTypes": null,
+                    "hexValue": "31393234efbfbdefbfbd33efbfbdefbfbd3130efbfbdefbfbd",
+                    "id": 142,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1395:27:1",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_fb3e58df5535216b149535c61139d5d304f37da96cc6bda0c2e7e92d957b8e38",
+                      "typeString": "literal_string \"1924��3��10��\""
+                    },
+                    "value": "1924��3��10��"
+                  },
+                  {
+                    "argumentTypes": null,
+                    "hexValue": "32303138efbfbdefbfbd3130efbfbdefbfbd3330efbfbdefbfbd",
+                    "id": 143,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1423:28:1",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_b124fee60c0d67c78f2dd08fe68f156c2b39ad88baafb3057d437a419961e3f3",
+                      "typeString": "literal_string \"2018��10��30��\""
+                    },
+                    "value": "2018��10��30��"
+                  },
+                  {
+                    "argumentTypes": null,
+                    "hexValue": "efbfbdefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdd2bbefbfbdefbfbdefbfbdcba3efbfbdefbfbddab6efbfbdcaaeefbfbdefbfbdefbfbdcda1efbfbdefbfbdefbfbdcaaed2bbefbfbdefbfbdefbfbdcda3efbfbdefbfbdefbfbdd0b4efbfbdefbfbdefbfbdefbfbdcaaeefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdd0a1cbb5efbfbdefbfbdefbfbdefbfbdd0a9d0a1cbb5ceaaefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdcfb2efbfbdefbfbdefbfbdefbfbd",
+                    "id": 144,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1452:186:1",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_6232553f121e566c6f428f91c1c7884914d09c21058fc943d5af889fb530201d",
+                      "typeString": "literal_string \"��������һ���ˣ��ڶ�ʮ���͡���ʮһ���ͣ���д����ʮ������С˵����ЩС˵Ϊ������ϲ����\""
+                    },
+                    "value": "��������һ���ˣ��ڶ�ʮ���͡���ʮһ���ͣ���д����ʮ������С˵����ЩС˵Ϊ������ϲ����"
+                  }
+                ],
+                "id": 145,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 140,
+                  "name": "Gravestone",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 136,
+                  "src": "1373:10:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Gravestone_$136_$",
+                    "typeString": "type(contract Gravestone)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1373:266:1"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 139,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1370:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 146,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1647:0:1"
+            },
+            "scope": 149,
+            "src": "1359:290:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 150,
+        "src": "1312:342:1"
+      }
+    ],
+    "src": "79:1575:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/fuzz_contract.sol",
+      "exportedSymbols": {
+        "Gravestone": [
+          136
+        ],
+        "JinYongGravestone": [
+          149
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".25"
+          ]
+        },
+        "id": 58,
+        "name": "PragmaDirective",
+        "src": "79:24:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            136
+          ],
+          "name": "Gravestone",
+          "scope": 150
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "departed",
+              "scope": 136,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct Gravestone.Departed",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Departed",
+                  "referencedDeclaration": 130,
+                  "type": "struct Gravestone.Departed"
+                },
+                "id": 59,
+                "name": "UserDefinedTypeName",
+                "src": "137:8:1"
+              }
+            ],
+            "id": 60,
+            "name": "VariableDeclaration",
+            "src": "137:24:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "epitaph",
+              "scope": 136,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 61,
+                "name": "ElementaryTypeName",
+                "src": "221:6:1"
+              }
+            ],
+            "id": 62,
+            "name": "VariableDeclaration",
+            "src": "221:21:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "worships",
+              "scope": 136,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct Gravestone.Worship[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct Gravestone.Worship[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Worship",
+                      "referencedDeclaration": 135,
+                      "type": "struct Gravestone.Worship"
+                    },
+                    "id": 63,
+                    "name": "UserDefinedTypeName",
+                    "src": "294:7:1"
+                  }
+                ],
+                "id": 64,
+                "name": "ArrayTypeName",
+                "src": "294:9:1"
+              }
+            ],
+            "id": 65,
+            "name": "VariableDeclaration",
+            "src": "294:25:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "worship_count",
+              "scope": 136,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 66,
+                "name": "ElementaryTypeName",
+                "src": "325:4:1"
+              }
+            ],
+            "id": 67,
+            "name": "VariableDeclaration",
+            "src": "325:25:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "payable": false,
+              "scope": 136,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_fullname",
+                      "scope": 91,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 68,
+                        "name": "ElementaryTypeName",
+                        "src": "423:6:1"
+                      }
+                    ],
+                    "id": 69,
+                    "name": "VariableDeclaration",
+                    "src": "423:16:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_birth_date",
+                      "scope": 91,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 70,
+                        "name": "ElementaryTypeName",
+                        "src": "440:6:1"
+                      }
+                    ],
+                    "id": 71,
+                    "name": "VariableDeclaration",
+                    "src": "440:18:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_death_date",
+                      "scope": 91,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 72,
+                        "name": "ElementaryTypeName",
+                        "src": "459:6:1"
+                      }
+                    ],
+                    "id": 73,
+                    "name": "VariableDeclaration",
+                    "src": "459:18:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_epitaph",
+                      "scope": 91,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 74,
+                        "name": "ElementaryTypeName",
+                        "src": "478:6:1"
+                      }
+                    ],
+                    "id": 75,
+                    "name": "VariableDeclaration",
+                    "src": "478:15:1"
+                  }
+                ],
+                "id": 76,
+                "name": "ParameterList",
+                "src": "422:72:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 77,
+                "name": "ParameterList",
+                "src": "502:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct Gravestone.Departed storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 60,
+                              "type": "struct Gravestone.Departed storage ref",
+                              "value": "departed"
+                            },
+                            "id": 78,
+                            "name": "Identifier",
+                            "src": "509:8:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "fullname",
+                                "birth_date",
+                                "death_date"
+                              ],
+                              "type": "struct Gravestone.Departed memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 130,
+                                  "type": "type(struct Gravestone.Departed storage pointer)",
+                                  "value": "Departed"
+                                },
+                                "id": 79,
+                                "name": "Identifier",
+                                "src": "520:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 69,
+                                  "type": "string memory",
+                                  "value": "_fullname"
+                                },
+                                "id": 80,
+                                "name": "Identifier",
+                                "src": "540:9:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 71,
+                                  "type": "string memory",
+                                  "value": "_birth_date"
+                                },
+                                "id": 81,
+                                "name": "Identifier",
+                                "src": "563:11:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 73,
+                                  "type": "string memory",
+                                  "value": "_death_date"
+                                },
+                                "id": 82,
+                                "name": "Identifier",
+                                "src": "588:11:1"
+                              }
+                            ],
+                            "id": 83,
+                            "name": "FunctionCall",
+                            "src": "520:81:1"
+                          }
+                        ],
+                        "id": 84,
+                        "name": "Assignment",
+                        "src": "509:92:1"
+                      }
+                    ],
+                    "id": 85,
+                    "name": "ExpressionStatement",
+                    "src": "509:92:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 62,
+                              "type": "string storage ref",
+                              "value": "epitaph"
+                            },
+                            "id": 86,
+                            "name": "Identifier",
+                            "src": "608:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 75,
+                              "type": "string memory",
+                              "value": "_epitaph"
+                            },
+                            "id": 87,
+                            "name": "Identifier",
+                            "src": "618:8:1"
+                          }
+                        ],
+                        "id": 88,
+                        "name": "Assignment",
+                        "src": "608:18:1"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "ExpressionStatement",
+                    "src": "608:18:1"
+                  }
+                ],
+                "id": 90,
+                "name": "Block",
+                "src": "502:131:1"
+              }
+            ],
+            "id": 91,
+            "name": "FunctionDefinition",
+            "src": "411:222:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "do_worship",
+              "payable": false,
+              "scope": 136,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_fullname",
+                      "scope": 123,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 92,
+                        "name": "ElementaryTypeName",
+                        "src": "699:6:1"
+                      }
+                    ],
+                    "id": 93,
+                    "name": "VariableDeclaration",
+                    "src": "699:16:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_message",
+                      "scope": 123,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 94,
+                        "name": "ElementaryTypeName",
+                        "src": "716:6:1"
+                      }
+                    ],
+                    "id": 95,
+                    "name": "VariableDeclaration",
+                    "src": "716:15:1"
+                  }
+                ],
+                "id": 96,
+                "name": "ParameterList",
+                "src": "698:34:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 123,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 97,
+                        "name": "ElementaryTypeName",
+                        "src": "749:6:1"
+                      }
+                    ],
+                    "id": 98,
+                    "name": "VariableDeclaration",
+                    "src": "749:6:1"
+                  }
+                ],
+                "id": 99,
+                "name": "ParameterList",
+                "src": "748:8:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        101
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "id",
+                          "scope": 123,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint",
+                              "type": "uint256"
+                            },
+                            "id": 100,
+                            "name": "ElementaryTypeName",
+                            "src": "764:4:1"
+                          }
+                        ],
+                        "id": 101,
+                        "name": "VariableDeclaration",
+                        "src": "764:7:1"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "length",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 65,
+                                  "type": "struct Gravestone.Worship storage ref[] storage ref",
+                                  "value": "worships"
+                                },
+                                "id": 102,
+                                "name": "Identifier",
+                                "src": "774:8:1"
+                              }
+                            ],
+                            "id": 103,
+                            "name": "MemberAccess",
+                            "src": "774:15:1"
+                          }
+                        ],
+                        "id": 104,
+                        "name": "UnaryOperation",
+                        "src": "774:17:1"
+                      }
+                    ],
+                    "id": 105,
+                    "name": "VariableDeclarationStatement",
+                    "src": "764:27:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 67,
+                              "type": "uint256",
+                              "value": "worship_count"
+                            },
+                            "id": 106,
+                            "name": "Identifier",
+                            "src": "798:13:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "length",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 65,
+                                  "type": "struct Gravestone.Worship storage ref[] storage ref",
+                                  "value": "worships"
+                                },
+                                "id": 107,
+                                "name": "Identifier",
+                                "src": "814:8:1"
+                              }
+                            ],
+                            "id": 108,
+                            "name": "MemberAccess",
+                            "src": "814:15:1"
+                          }
+                        ],
+                        "id": 109,
+                        "name": "Assignment",
+                        "src": "798:31:1"
+                      }
+                    ],
+                    "id": 110,
+                    "name": "ExpressionStatement",
+                    "src": "798:31:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct Gravestone.Worship storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct Gravestone.Worship storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 65,
+                                  "type": "struct Gravestone.Worship storage ref[] storage ref",
+                                  "value": "worships"
+                                },
+                                "id": 111,
+                                "name": "Identifier",
+                                "src": "836:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 101,
+                                  "type": "uint256",
+                                  "value": "id"
+                                },
+                                "id": 112,
+                                "name": "Identifier",
+                                "src": "845:2:1"
+                              }
+                            ],
+                            "id": 113,
+                            "name": "IndexAccess",
+                            "src": "836:12:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "fullname",
+                                "message"
+                              ],
+                              "type": "struct Gravestone.Worship memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 135,
+                                  "type": "type(struct Gravestone.Worship storage pointer)",
+                                  "value": "Worship"
+                                },
+                                "id": 114,
+                                "name": "Identifier",
+                                "src": "851:7:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 93,
+                                  "type": "string memory",
+                                  "value": "_fullname"
+                                },
+                                "id": 115,
+                                "name": "Identifier",
+                                "src": "870:9:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 95,
+                                  "type": "string memory",
+                                  "value": "_message"
+                                },
+                                "id": 116,
+                                "name": "Identifier",
+                                "src": "890:8:1"
+                              }
+                            ],
+                            "id": 117,
+                            "name": "FunctionCall",
+                            "src": "851:49:1"
+                          }
+                        ],
+                        "id": 118,
+                        "name": "Assignment",
+                        "src": "836:64:1"
+                      }
+                    ],
+                    "id": 119,
+                    "name": "ExpressionStatement",
+                    "src": "836:64:1"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 99
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "5468616e6b20796f75",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "string",
+                          "type": "literal_string \"Thank you\"",
+                          "value": "Thank you"
+                        },
+                        "id": 120,
+                        "name": "Literal",
+                        "src": "920:11:1"
+                      }
+                    ],
+                    "id": 121,
+                    "name": "Return",
+                    "src": "913:18:1"
+                  }
+                ],
+                "id": 122,
+                "name": "Block",
+                "src": "757:184:1"
+              }
+            ],
+            "id": 123,
+            "name": "FunctionDefinition",
+            "src": "679:262:1"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Gravestone.Departed",
+              "name": "Departed",
+              "scope": 136,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "fullname",
+                  "scope": 130,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 124,
+                    "name": "ElementaryTypeName",
+                    "src": "1004:6:1"
+                  }
+                ],
+                "id": 125,
+                "name": "VariableDeclaration",
+                "src": "1004:15:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "birth_date",
+                  "scope": 130,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 126,
+                    "name": "ElementaryTypeName",
+                    "src": "1062:6:1"
+                  }
+                ],
+                "id": 127,
+                "name": "VariableDeclaration",
+                "src": "1062:17:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "death_date",
+                  "scope": 130,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 128,
+                    "name": "ElementaryTypeName",
+                    "src": "1122:6:1"
+                  }
+                ],
+                "id": 129,
+                "name": "VariableDeclaration",
+                "src": "1122:17:1"
+              }
+            ],
+            "id": 130,
+            "name": "StructDefinition",
+            "src": "951:195:1"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Gravestone.Worship",
+              "name": "Worship",
+              "scope": 136,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "fullname",
+                  "scope": 135,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 131,
+                    "name": "ElementaryTypeName",
+                    "src": "1221:6:1"
+                  }
+                ],
+                "id": 132,
+                "name": "VariableDeclaration",
+                "src": "1221:15:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "message",
+                  "scope": 135,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 133,
+                    "name": "ElementaryTypeName",
+                    "src": "1278:6:1"
+                  }
+                ],
+                "id": 134,
+                "name": "VariableDeclaration",
+                "src": "1278:14:1"
+              }
+            ],
+            "id": 135,
+            "name": "StructDefinition",
+            "src": "1156:143:1"
+          }
+        ],
+        "id": 136,
+        "name": "ContractDefinition",
+        "src": "111:1193:1"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            136
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            149,
+            136
+          ],
+          "name": "JinYongGravestone",
+          "scope": 150
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Gravestone",
+                  "referencedDeclaration": 136,
+                  "type": "contract Gravestone"
+                },
+                "id": 137,
+                "name": "UserDefinedTypeName",
+                "src": "1342:10:1"
+              }
+            ],
+            "id": 138,
+            "name": "InheritanceSpecifier",
+            "src": "1342:10:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "name": "",
+              "payable": false,
+              "scope": 149,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 139,
+                "name": "ParameterList",
+                "src": "1370:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 146,
+                "name": "ParameterList",
+                "src": "1647:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 136,
+                      "type": "type(contract Gravestone)",
+                      "value": "Gravestone"
+                    },
+                    "id": 140,
+                    "name": "Identifier",
+                    "src": "1373:10:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "efbfbdefbfbdd3b9",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"��ӹ\"",
+                      "value": "��ӹ"
+                    },
+                    "id": 141,
+                    "name": "Literal",
+                    "src": "1384:10:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "31393234efbfbdefbfbd33efbfbdefbfbd3130efbfbdefbfbd",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"1924��3��10��\"",
+                      "value": "1924��3��10��"
+                    },
+                    "id": 142,
+                    "name": "Literal",
+                    "src": "1395:27:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "32303138efbfbdefbfbd3130efbfbdefbfbd3330efbfbdefbfbd",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"2018��10��30��\"",
+                      "value": "2018��10��30��"
+                    },
+                    "id": 143,
+                    "name": "Literal",
+                    "src": "1423:28:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "efbfbdefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdd2bbefbfbdefbfbdefbfbdcba3efbfbdefbfbddab6efbfbdcaaeefbfbdefbfbdefbfbdcda1efbfbdefbfbdefbfbdcaaed2bbefbfbdefbfbdefbfbdcda3efbfbdefbfbdefbfbdd0b4efbfbdefbfbdefbfbdefbfbdcaaeefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdd0a1cbb5efbfbdefbfbdefbfbdefbfbdd0a9d0a1cbb5ceaaefbfbdefbfbdefbfbdefbfbdefbfbdefbfbdcfb2efbfbdefbfbdefbfbdefbfbd",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"��������һ���ˣ��ڶ�ʮ���͡���ʮһ���ͣ���д����ʮ������С˵����ЩС˵Ϊ������ϲ����\"",
+                      "value": "��������һ���ˣ��ڶ�ʮ���͡���ʮһ���ͣ���д����ʮ������С˵����ЩС˵Ϊ������ϲ����"
+                    },
+                    "id": 144,
+                    "name": "Literal",
+                    "src": "1452:186:1"
+                  }
+                ],
+                "id": 145,
+                "name": "ModifierInvocation",
+                "src": "1373:266:1"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 147,
+                "name": "Block",
+                "src": "1647:2:1"
+              }
+            ],
+            "id": 148,
+            "name": "FunctionDefinition",
+            "src": "1359:290:1"
+          }
+        ],
+        "id": 149,
+        "name": "ContractDefinition",
+        "src": "1312:342:1"
+      }
+    ],
+    "id": 150,
+    "name": "SourceUnit",
+    "src": "79:1575:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {
+    "1639341684744": {
+      "events": {},
+      "links": {},
+      "address": "0x724F259aEe54E29b78536457a05BB992C771D252",
+      "transactionHash": "0xd8369eedf8730c9812966b62d939c3ca126621bd7aa34c3e2547012841e79500"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-12-12T20:41:27.810Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
